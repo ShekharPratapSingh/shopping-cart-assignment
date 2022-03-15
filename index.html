@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.css">
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div class="w3-bar w3-border w3-light-grey">
+          <img src="static/images/logo.png" style="width: 128px; height: 128px" />
+          <a href="#" class="w3-bar-item w3-button w3-green">Home</a>
+          <a href="#" class="w3-bar-item w3-button">Products</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <img
+            src="static/images/cart.svg"
+            style="width: 98px; height: 98px; float: right"
+          />
+        </div>
+      </nav>
+      <main>
+        <div class="slideshow-container">
+      <img
+        class="mySlides"
+        src="static/images/offers/offer1.jpg"
+        alt="custom_html_banner1"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="static/images/offers/offer2.jpg"
+        alt="custom_html_banner2"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="static/images/offers/offer3.jpg"
+        alt="custom_html_banner3"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="static/images/offers/offer4.jpg"
+        alt="custom_html_banner4"
+        style="width: 100%"
+      />
+      <img
+        class="mySlides"
+        src="static/images/offers/offer5.jpg"
+        alt="custom_html_banner4"
+        style="width: 100%"
+      />
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+      </main>
+    </section>
+   
+
+    
+    <script src="./server/banners/index.get.json"></script>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    </script>
+  </body>
+</html>
