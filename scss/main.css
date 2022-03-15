@@ -4,7 +4,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -21,11 +21,67 @@ section a {
   font-size: 2.3rem;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+section .nav_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .nav_main .nav_logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section .nav_main .nav_links {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+section .nav_main .nav_links a {
+  margin-right: 3.5rem;
+}
+
+section .nav_main .nav_cart {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+section hr {
+  width: 100%;
   position: relative;
-  margin: auto;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+}
+
+section main {
+  height: 100vh;
+  /* width: 97vw; */
+  margin-top: 4.2rem;
+}
+
+section main hr {
+  width: 62%;
+  position: relative;
+  left: 33.7rem;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+}
+
+/* Slideshow container */
+.slideshow-container img {
+  height: auto;
+  width: 63%;
+  position: relative;
+  left: 314px;
 }
 
 /* The dots/bullets/indicators */

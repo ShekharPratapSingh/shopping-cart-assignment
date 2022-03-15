@@ -1,55 +1,91 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+@mixin flexprob($prob) {
+  flex: $prob;
+}
+
+@mixin hrtag($hr,$left) {
+    width: $hr;
+    position: relative;
+    left: $left;
+    box-shadow: 0px 0px 4px black;
     
 }
-html{
-    font-size: 62.5%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
 }
 
-
-section{
-    margin: 0px 6.4rem;
-    a{
-        text-decoration: none;
-        color: black;
-        font-size: 2.3rem;
+section {
+  margin: 0px 6.4rem;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.3rem;
+  }
+  .nav_main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav_logo {
+      @include flexprob(1);
     }
-}
+    .nav_links {
+      @include flexprob(7);
+      a {
+        margin-right: 3.5rem;
+      }
+    }
+    .nav_cart {
+      @include flexprob(2);
+    }
+  }
+  hr{
+      @include hrtag(100%,0 )
+  }
 
+  main {
+    height: 100vh;
+    /* width: 97vw; */
+    margin-top: 4.2rem;
+    hr{
+        @include hrtag(62%,33.7rem )
+    }
+  }
+}
 
 /* Slideshow container */
 
 .slideshow-container {
+    // border-bottom: 1px solid;
+    img{
+        height: auto;
+        width: 63%;
+        position: relative;
+        left: 314px;
+    }
+    
+}
 
-    max-width: 1000px;
-  
-    position: relative;
-  
-    margin: auto;
-  
-  }
-  
-  
-  /* The dots/bullets/indicators */
-  
-  .dot {
-  
-    height: 15px;
-  
-    width: 15px;
-  
-    margin: 0 2px;
-  
-    background-color: #bbb;
-  
-    border-radius: 50%;
-  
-    display: inline-block;
-  
-    transition: background-color 0.6s ease;
-  
-  }
+/* The dots/bullets/indicators */
+
+.dot {
+  height: 15px;
+
+  width: 15px;
+
+  margin: 0 2px;
+
+  background-color: #bbb;
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  transition: background-color 0.6s ease;
+}
