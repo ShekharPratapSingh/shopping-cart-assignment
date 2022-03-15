@@ -76,6 +76,38 @@ section main hr {
           box-shadow: 0px 0px 4px black;
 }
 
+section main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section main .card .card-img-top {
+  width: 46%;
+}
+
+section main .card .card_side2 {
+  width: 43%;
+  text-align: center;
+  /* height: 29px; */
+  font-size: 13px;
+  line-height: 26px;
+}
+
+section main .card .card_side2 button {
+  width: 22%;
+  padding: 6px 0px;
+  background: #bf2957;
+  color: white;
+  opacity: 90%;
+  border: none;
+}
+
 /* Slideshow container */
 .slideshow-container img {
   height: auto;

@@ -56,6 +56,31 @@ section {
     hr{
         @include hrtag(62%,33.7rem )
     }
+    .card{
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .card-img-top{
+        width: 46%;
+    }
+    .card_side2{
+        width: 43%;
+    text-align: center;
+    /* height: 29px; */
+    font-size: 13px;
+    line-height: 26px;
+
+    button{
+        width: 22%;
+        padding: 6px 0px;
+        background: #bf2957;
+        color: white;
+        opacity: 90%;
+        border: none;
+    }
+
+    }
+    }
   }
 }
 
