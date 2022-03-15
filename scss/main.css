@@ -18,7 +18,8 @@ section {
 section a {
   text-decoration: none;
   color: black;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
+  padding: 0px 0.4rem;
 }
 
 section .nav_main {
@@ -52,6 +53,19 @@ section .nav_main .nav_cart {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+section .nav_main .nav_cart img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align-items: center; */
+  position: relative;
+  height: 4rem;
+  top: 0.2rem;
 }
 
 section hr {
