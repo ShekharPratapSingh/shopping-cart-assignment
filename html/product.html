@@ -12,19 +12,27 @@
       <nav>
         <div class="w3-bar w3-border w3-light-grey nav_main">
           <div class="nav_logo">
-            <img
-              src="../static/images/logo.png"
-              style="width: 12.8rem; height: 7.9rem"
-            />
+            <img src="../static/images/logo.png" style="width: 12.8rem; height: 7.9rem" />
           </div>
           <div class="nav_links">
-            <a href="#" class="w3-bar-item w3-button w3-green">Home</a>
-            <a href="#" class="w3-bar-item w3-button">Products</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-green">Home</a>
+            <a href="../html/product.html" class="w3-bar-item w3-button">Products</a>
           </div>
           <div class="nav_cart">
-            <a href="#">SignIn</a>
-            <a href="#">Register</a>
-            <img src="../static/images/cart.svg" />
+            <a href="./signin.html">SignIn</a>
+            <a href="./register.html">Register</a>
+            <div class="cart">
+              <a href="../html/cart.html" style="display: flex">
+                <img
+                  class="cart-icon"
+                  src="../../static/images/cart.svg"
+                  alt="Shopping cart icon"
+                />
+                <span class="cart-item" style="position: relative; top: 9px"
+                  >0 items</span
+                >
+              </a>
+            </div>
           </div>
         </div>
       </nav>

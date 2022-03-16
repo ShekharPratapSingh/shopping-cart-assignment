@@ -9,7 +9,7 @@ window.fetch("../server/products/index.get.json").then((res) =>
         product_datas += `
             <div class="card">
             <h1>${product_cat.name}</h1>
-                <img src="${product_cat.imageURL}" alt="Denim Jeans" style="width:100%">
+                <img src="${product_cat.imageURL}" alt="Denim Jeans" style="width:100%;height: 311px;">
                 <p class="description">${product_cat.description}</p>
                  <p class="price"> MRP of ${product_cat.price}</p>
                  <p><button>Buy Now</button></p>

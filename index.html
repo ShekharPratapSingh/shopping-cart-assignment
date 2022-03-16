@@ -5,83 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <section>
       <nav>
         <div class="w3-bar w3-border w3-light-grey nav_main">
-            <div class="nav_logo">
-                <img src="static/images/logo.png" style="width: 12.8rem; height: 7.9rem" />
-            </div>
+          <div class="nav_logo">
+            <img
+              src="static/images/logo.png"
+              style="width: 12.8rem; height: 7.9rem"
+            />
+          </div>
           <div class="nav_links">
-            <a href="#" class="w3-bar-item w3-button w3-green">Home</a>
-          <a href="./html/product.html" class="w3-bar-item w3-button">Products</a>
-          
+            <a href="/" class="w3-bar-item w3-button w3-green">Home</a>
+            <a href="./html/product.html" class="w3-bar-item w3-button"
+              >Products</a
+            >
           </div>
           <div class="nav_cart">
-              <a href="#">SignIn</a>
-              <a href="#">Register</a>
-            <img
-            src="static/images/cart.svg"
-            
-          />
+            <a href="./html/signin.html">SignIn</a>
+            <a href="./html/register.html">Register</a>
+            <div class="cart">
+              <a href="./html/cart.html" style="display: flex">
+                <img
+                  class="cart-icon"
+                  src="../../static/images/cart.svg"
+                  alt="Shopping cart icon"
+                />
+                <span class="cart-item" style="position: relative; top: 9px"
+                  >0 items</span
+                >
+              </a>
+            </div>
           </div>
-          
         </div>
       </nav>
-      <hr>
+      <hr />
       <main>
         <div class="slideshow-container">
-      <img
-        class="mySlides"
-        src="static/images/offers/offer1.jpg"
-        alt="custom_html_banner1"
-        
-      />
-      <img
-        class="mySlides"
-        src="static/images/offers/offer2.jpg"
-        alt="custom_html_banner2"
-        
-      />
-      <img
-        class="mySlides"
-        src="static/images/offers/offer3.jpg"
-        alt="custom_html_banner3"
-        
-      />
-      <img
-        class="mySlides"
-        src="static/images/offers/offer4.jpg"
-        alt="custom_html_banner4"
-        
-      />
-      <img
-        class="mySlides"
-        src="static/images/offers/offer5.jpg"
-        alt="custom_html_banner4"
-        
-      />
-      <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-    <hr>
-    <div class="product">
-        <div id="product_row"></div>
-    </div>
-
-    
+          <img
+            class="mySlides"
+            src="static/images/offers/offer1.jpg"
+            alt="custom_html_banner1"
+          />
+          <img
+            class="mySlides"
+            src="static/images/offers/offer2.jpg"
+            alt="custom_html_banner2"
+          />
+          <img
+            class="mySlides"
+            src="static/images/offers/offer3.jpg"
+            alt="custom_html_banner3"
+          />
+          <img
+            class="mySlides"
+            src="static/images/offers/offer4.jpg"
+            alt="custom_html_banner4"
+          />
+          <img
+            class="mySlides"
+            src="static/images/offers/offer5.jpg"
+            alt="custom_html_banner4"
+          />
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <hr />
+        <div class="product">
+          <div id="product_row"></div>
+        </div>
       </main>
     </section>
-   
 
-    
     <script src="./server/banners/index.get.json"></script>
     <script src="./js/banner.js"></script>
     <script>

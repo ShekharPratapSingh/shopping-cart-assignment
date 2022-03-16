@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/signin.css" />
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-section {
+            text-align: center;
+            margin: 1em;
+            flex: 1;
+        }
+
+        .login-title {
+            margin-bottom: 0.5em;
+            font-size: 43px;
+        }
+        .login-description{
+          font-size: 2rem;
+        }
+        .login-data {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            width: 80vw;
+            margin: 2em;
+        }
+
+        .input-field {
+            border: none;
+            border-bottom: 2px solid #000;
+            margin-bottom: 2em;
+            padding: 0.5em;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border-color: #D00155;
+        }
+
+        .button {
+            height: 3em;
+            padding: 1em;
+            background-color: #D00155;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div class="w3-bar w3-border w3-light-grey nav_main">
+          <div class="nav_logo">
+            <img
+              src="../static/images/logo.png"
+              style="width: 12.8rem; height: 7.9rem"
+            />
+          </div>
+          <div class="nav_links">
+            <a href="../index.html" class="w3-bar-item w3-button w3-green">Home</a>
+            <a href="./product.html" class="w3-bar-item w3-button">Products</a>
+          </div>
+          <div class="nav_cart">
+            <a href="./signin.html">SignIn</a>
+            <a href="./register.html">Register</a>
+            <div class="cart">
+                <a href="../html/cart.html" style="display: flex">
+                  <img
+                    class="cart-icon"
+                    src="../../static/images/cart.svg"
+                    alt="Shopping cart icon"
+                  />
+                  <span class="cart-item" style="position: relative; top: 9px"
+                    >0 items</span
+                  >
+                </a>
+              </div>
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <main>
+        <div class="container">
+
+            <section class="login-section">
+                <h1 class="login-title">Login</h1>
+                <p class="login-description">Get access to your Orders, Wishlist and Recommandations
+                </p>
+            </section>
+            <section class="login-data">
+                <input class="input-field" type="email" name="email" placeholder="Email" required>
+                <input class="input-field" type="password" name="password" placeholder="Password" required>
+                <button class="button">Login</button>
+            </section>
+        </div>
+    </main>
+   
+    </section>
+  </body>
+</html>
