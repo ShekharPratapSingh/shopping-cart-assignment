@@ -1,31 +1,22 @@
 let product_items = document.getElementById("product_row");
 
-window.fetch("server/categories/index.get.json").then((res) =>
-  res.json().then((datas,i) => {
-      console.log(datas)
-    let sortedInput = datas.slice().sort((a, b) => a.order - b.order);
-      console.log(sortedInput);
+window.fetch("../server/products/index.get.json").then((res) =>
+  res.json().then((datas, i) => {
+    console.log(datas);
     let product_datas = [];
-    for (let product_cat of sortedInput) {
-        if(product_cat.enabled){
-           
-            console.log(product_cat);
-            product_datas += `
-            <div class="card" ">
-            <div class="card_side1">
-            <img src="${product_cat.imageUrl}" class="card-img-top">
+    for (let product_cat of datas) {
+        console.log(product_cat);
+        product_datas += `
+            <div class="card">
+            <h1>${product_cat.name}</h1>
+                <img src="${product_cat.imageURL}" alt="Denim Jeans" style="width:100%">
+                <p class="description">${product_cat.description}</p>
+                 <p class="price"> MRP of ${product_cat.price}</p>
+                 <p><button>Buy Now</button></p>
             </div>
-            <div class='card_side2'>
-            <h5 class="card-title">${product_cat.name}</h5>
-            <p class="card-text">${product_cat.description}</p>
-            <button type="button" class="btn btn-primary">Explore ${product_cat.key}</button>
-            </div>
-          </div>
-          <hr/>
             `;
-            product_items.innerHTML = product_datas;
-        }
-     
+        product_items.innerHTML = product_datas;
+      
     }
   })
 );
