@@ -68,8 +68,12 @@ section {
     }
     .card{
         display: flex;
-    justify-content: space-around;
-    align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap ;
+          .card_side1{
+            text-align: center;
+          }
     .card-img-top{
         width: 46%;
     }
